@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+.cont--totalMoney{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 360px;
+  height: 96px;
+  border:solid;
+  border-color: #E9ECEF;
+  border-width: 1px;
+  background-color: #E9ECEF;
+}
+
+.cont--valorTotal{
+  width: 220px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+  text-align: start;
+  margin-left: 20px;
+}
+.cont--valorTotal > span{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  color: #5B6166;
+}
+
+
+.cont--valor{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #FD377E;
+  margin-right: 20px;
+}

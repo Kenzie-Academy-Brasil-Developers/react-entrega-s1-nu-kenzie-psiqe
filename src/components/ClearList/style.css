@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+.cont--semLançamento{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0px 0px 0px 15px;
+  text-align: start;
+  color: #FD377E;
+
+}
+.unity--transation{
+  background-color: #F8F9FA;
+  width: 560px ;
+  height: 87px;
+  display: grid;
+  grid-template-columns: 1% 69% 30%;
+  border-radius: 4px;
+  margin:15px
+}
+
+.cor--transation{
+  background: #E9ECEF;
+  height: 87px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.cont--description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 20px 0px 20px 20px;
+}
+
+.block--name{
+  width: 330px;
+  height: 14px;
+  background: #E9ECEF;
+}
+.block--type{
+  width: 76px;
+  height: 14px;
+  background: #E9ECEF;
+}

@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/158725-conjunto-de-icones-da-contabilidade-financeira-e-da-contabilidade-gr%C3%A1tis-vetor.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  
+}
+.cont--transations{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows:75% 25%;
+}
+.body{
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.cont--list{
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.list--transations{
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  height: 500px;
+  overflow-y:auto ;
+  color: rgb(227, 73, 129);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #e34981 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 23px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e34981;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+  }
