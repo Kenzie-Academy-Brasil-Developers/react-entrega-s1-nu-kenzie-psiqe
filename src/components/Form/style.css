@@ -6,12 +6,17 @@ input {
 
 
 .form--transations{
-  height: 390px;
-  width: 360px;
+  
+  min-height: 350px;
+  width: 30vw;
+  min-width: 307px;
   background-color: #E9ECEF;
   display: grid;
   grid-template-rows: 50% 30% 20%;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
 }
 .btn--transation{
   background-color: #FD377E;
@@ -37,7 +42,8 @@ input {
 }
 .cont--grid--1 > input{
   height: 52px;
-  width: 314px;
+  width: 22vw;
+  min-width: 200px;
   margin: 0px 15px 0px 15px;
   border: transparent;
   border-radius: 8px;
@@ -85,7 +91,7 @@ input::-webkit-inner-spin-button {
   
 }
 select {
-  width:150px;
+  width:100%;
   height:52px;
   font-family: 'Inter', sans-serif;
     color: #5B6166;
@@ -96,11 +102,40 @@ select {
   option:hover{
     background-color: #E9ECEF;
   }
+  .cont--btnSwap{
+    width: 100%;
+  }
     .btn--transation{
-      width: 314px;
+      width: 80%;
       height: 52px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
     }
    
+    @media only screen and (max-width: 767px) and (min-width: 320px) {
+      .cont--transations{
+        height: max-content;
+      }
+      .form--transations{
+        width: 20vw ;
+        min-width: 263px;
+      }
+      .cont--grid--1 > input{
+        font-size: 15px;
+      }
+      .cont--grid--2{
+        display: flex;
+
+      }
+      .cont--valor > input{
+        min-width: 70px;
+        margin-left: 3px;
+      }
+      .cont--select > select{
+        min-width: 88px;
+      }
+      .cont--select > p {
+        font-size: 10px;
+      }
+    }

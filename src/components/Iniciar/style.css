@@ -42,6 +42,7 @@
   font-weight: 400;
   font-size: 16px;
   text-align: start;
+  width: 179px;
 }
 .btn--iniciar{
   width: 241px;
@@ -52,4 +53,25 @@
   color: white;
   cursor: pointer;
   
+}
+
+@media only screen and (max-width: 768px) {
+  .cont--iniciar {
+    display: grid;
+    grid-template-columns: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first--cont{
+    padding: 10px;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .p--1{
+    font-size: 30px;
+    width: 70%;
+    min-width: 242px;
+  }
+
 }

@@ -2,8 +2,15 @@ import './style.css'
 
 function Resumo() {
 
-  function filter(){
-    
+  function filter(e){
+    const ul = document.querySelector('.list--filter')
+    const list = [...ul.children]
+    list.forEach(element => {
+      element.classList.remove(true)
+      if(element === e.target){
+        e.target.classList.add(true)
+      }
+    });
   }
 
   return(
@@ -14,9 +21,9 @@ function Resumo() {
         </div>
         <div>
           <ul className="list--filter">
-            <li  onClick={filter} className="item--filter">Todos</li>
-            <li   className="item--filter" >Entradas</li>
-            <li   className="item--filter" >Saídas</li>
+            <li  onClick={filter} className="item--filter true">Todos</li>
+            <li  onClick={filter} className="item--filter " >Entradas</li>
+            <li  onClick={filter} className="item--filter  " >Saídas</li>
           </ul>
         </div>
       </div>

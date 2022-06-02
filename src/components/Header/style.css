@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .cont--name{
   background-color: white;
@@ -44,5 +45,6 @@
   font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
+  margin-right: 10px;
   color: #5B6166;
 }

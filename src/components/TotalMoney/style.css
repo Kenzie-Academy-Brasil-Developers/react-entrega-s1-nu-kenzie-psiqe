@@ -5,12 +5,14 @@
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 360px;
+  width: 30vw;
+  min-width: 307px;
   height: 96px;
   border:solid;
   border-color: #E9ECEF;
   border-width: 1px;
   background-color: #E9ECEF;
+  margin-left: 15px;
 }
 
 .cont--valorTotal{
@@ -36,4 +38,18 @@
   font-weight: 700;
   color: #FD377E;
   margin-right: 20px;
+}
+.cont--valor > span{
+  font-size: 16px;
+  width: 80px;
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .cont--totalMoney{
+    width: 20vw ;
+    min-width: 263px;
+    margin: 10px 0px 0px 0px;
+
+  }
 }

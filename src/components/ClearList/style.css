@@ -3,20 +3,21 @@
 .cont--semLançamento{
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0px 0px 0px 15px;
   text-align: start;
   color: #FD377E;
+  
 
 }
 .unity--transation{
   background-color: #F8F9FA;
-  width: 560px ;
+  width: 50vw ;
   height: 87px;
   display: grid;
   grid-template-columns: 1% 69% 30%;
   border-radius: 4px;
-  margin:15px
+
 }
 
 .cor--transation{
@@ -32,15 +33,18 @@
   gap: 10px;
   justify-content: space-around;
   margin: 20px 0px 20px 20px;
+  width: 40vw;
 }
 
 .block--name{
-  width: 330px;
+  width: 50vw;
+  max-width: 350px;
   height: 14px;
   background: #E9ECEF;
 }
 .block--type{
-  width: 76px;
+  width: 20vw;
+  max-width: 150px;
   height: 14px;
   background: #E9ECEF;
 }

@@ -21,13 +21,13 @@ function Card(props){
         ):(
           <div className="cor--transation" style={{background: 'red'}}></div>
         )}
-        <div className="cont--description">
+        <div className="cont--description--transation">
           <p>{props.transaction.description}</p>
           <span>{props.transaction.type}</span>
         </div>
         <div className="cont--price">
           <p>R$ {props.transaction.value}</p>
-          <button id={`${props.index}`} onClick={deleteTransation} className="btn--remove--transation"></button>
+          <button id={props.transaction.id} onClick={deleteTransation} className="btn--remove--transation"></button>
         </div>
 
       </li>

@@ -1,18 +1,26 @@
+import { useState } from 'react';
 import './style.css';
 
 
-function Transations(props){
+function Form(props){
+  const [idtransition, setIdTransition] = useState(0)
   
   const onSubmit = (e) => {
     e.preventDefault();
     const data = { 
-      id: props.listTransitions.length ,
+      id: idtransition ,
       description: e.target.elements.description.value,
       type: e.target.elements.type.value,
       value: e.target.elements.value.value
     }
     props.setListTransitions([...props.listTransitions, data])
+    if(data.type === 'entrada'){
+      props.setInputTransitions([...props.inputTransitions, data])
+    }else{
+      props.setExitTransitions([...props.exitTransitions, data])
+    }
     
+    setIdTransition(idtransition + 1)
   }
 
   return (
@@ -33,19 +41,19 @@ function Transations(props){
                 <div className='coin'></div>
               </div>
             </div>
-            <div>
+            <div className='cont--select'>
               <p>Tipo de valor</p>
-              <select name='type' >             
+              <select  name='type' >             
                 <option value="entrada">Entrada</option>
                 <option value="saida">Saída</option>
               </select>
             </div>
           </div>
-          <div><button className='btn--transation' type="submit">Swap</button></div>
+          <div className='cont--btnSwap'><button className='btn--transation' type="submit">Swap</button></div>
         </div>
       </form>
     </>
   )
 }
 
-export default Transations
+export default Form

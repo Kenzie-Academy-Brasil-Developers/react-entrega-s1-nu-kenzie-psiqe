@@ -2,12 +2,12 @@
 
 .unity--transation{
   background-color: #F8F9FA;
-  width: 560px ;
   height: 87px;
   display: grid;
   grid-template-columns: 1% 69% 30%;
   border-radius: 4px;
-  margin:15px
+  margin:15px 15px 15px 30px;
+  min-width: 255px;
 }
 
 .cor--transation{
@@ -16,7 +16,7 @@
   border-bottom-left-radius: 4px;
 }
 
-.cont--description{
+.cont--description--transation{
   display: flex;
   flex-direction: column;
   color: #212529;
@@ -24,7 +24,8 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   text-align: start;
-  margin-left: 20px;
+  margin: 0;
+  padding: 0px 0px 0px 20px;
 }
 .cont--description > span{
   color: #5B6166;
@@ -37,7 +38,7 @@
   flex-direction: row;
   color: #212529;
   align-items:flex-start;
-  padding: 15px;
+  padding: 15px 15px 0px 0px;
   margin: 0;
   justify-content: space-around;
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import Transations from './components/Form';
+import Form from './components/Form';
 import  List  from './components/List';
 import Header from './components/Header';
 import Resumo from './components/Resumo';
@@ -11,16 +11,14 @@ import Iniciar from './components/Iniciar';
 
 function App() {
   const [listTransitions, setListTransitions] = useState([])
+  const [exitTransitions, setExitTransitions ] = useState([])
+  const [inputTransitions, setInputTransitions ] = useState([])
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
 
-  function Login(){
-    return setIsLoggedIn(true)
-  }
+  function Login() { return setIsLoggedIn(true)  }
 
-  function Logout(){
-    return setIsLoggedIn(false)
-  }
+  function Logout(){ return setIsLoggedIn(false) }
 
   if(isLoggedIn === true){
   
@@ -32,7 +30,7 @@ function App() {
           </div>
           <div className='body'>
           <div className='cont--transations'> 
-            <Transations listTransitions={listTransitions} setListTransitions={setListTransitions}/>
+            <Form  inputTransitions={inputTransitions} setInputTransitions={setInputTransitions} exitTransitions={exitTransitions} setExitTransitions={setExitTransitions} listTransitions={listTransitions} setListTransitions={setListTransitions}/>
             { listTransitions.length > 0 ? (
               <>
                 <TotalMoney listTransitions={listTransitions}/>
@@ -43,9 +41,9 @@ function App() {
             )}
           </div>
           <div className='cont--list'>
-            <div>
+            
               <Resumo/>
-            </div>
+           
             <ul className='list--transations' >
             { listTransitions.length > 0 ? (
               <>
